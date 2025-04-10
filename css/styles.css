@@ -1,0 +1,104 @@
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(249, 249, 249);
+}
+
+button {
+  transition: 0.5s ease;
+}
+
+.card-body {
+  background: #222222;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+
+.navbar.scrolled {
+  background: rgba(0, 0, 0, 0.9);
+}
+.form-control {
+  border-radius: 0;
+}
+
+.hero-container {
+  position: relative;
+  height: 50vh;
+  z-index: 1;
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.hero-container img {
+  position: relative;
+  z-index: 0;
+  height: 50vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card {
+  border-radius: 0 !important;
+
+  cursor: pointer;
+
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-product {
+}
+
+.card-product:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  border-radius: 0 !important;
+}
+.test {
+  border-radius: 0;
+}
+label.required::after {
+  content: ' *';
+  color: red;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-fluid {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.fa-trash {
+  cursor: pointer;
+}
+a {
+  text-decoration: none;
+}
+input.form-control::placeholder {
+  opacity: 0.4;
+  color: grey;
+}
